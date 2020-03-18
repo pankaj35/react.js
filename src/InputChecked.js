@@ -28,7 +28,7 @@ class InputChecked extends Component {
                      <div  key={item.id}> 
                         <input type="checkbox" name={item.id} checked={item.checked} onChange={()=> this.props.handlehange(index)} className = "inputs"/>
                         
-                        <input value={item.name} type="text" onChange ={(e)=> this.props.editable(e,index)}></input>
+                        <input value={item.name} type="text" onChange ={(e)=> this.props.editable(e,index)} id = "input"></input>
                         <span>{item.checked ? "Completed" : null} </span>
                     </div>
                      )
