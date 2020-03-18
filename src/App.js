@@ -29,8 +29,7 @@ class App extends Component {
           checked:false
         },
       ],
-      text: "",
-      
+      text: "",      
     }
     this.handlehange = this.handlehange.bind(this);
   }
@@ -54,20 +53,13 @@ class App extends Component {
 submit = (event)=>{
   event.preventDefault();
   const text = this.state.text
-  // this.setState(
-  //   {Names: {...this.state.Names, }}
-  // )
-  // this.setState((prev)=>({Names:[...prev.Names, {id: this.state.Names.length, name:text }]}))
   if(text === ""){
-    // const newConst = [...this.state.text,newConst]
     this.setState({
       text: "",
     })
   }else{
     this.setState((prev)=>({Names:[...prev.Names, {id: this.state.Names.length, name:text }]}))
-  }
-  
-   
+  } 
 }
 textcontext = (e) =>{
   this.setState (
@@ -94,9 +86,7 @@ editable = (e,index) =>{
       <button>submit</button>
       </form>
       </div>
- 
     )
   }
 }
-
 export default App;
