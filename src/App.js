@@ -33,21 +33,14 @@ class App extends Component {
     }
     this.handlehange = this.handlehange.bind(this);
   }
-  
   handlehange = (ID) => {
     let data = this.state.Names;
-    console.log(data);
-    // console.log(event.target.name);
     data = data.map(val=>{
-      console.log(ID)
       if(val.id === ID){
         val.checked = !val.checked;
       }
-      return val;
-     
-    })
-    console.log(data);
-    
+      return val; 
+    })   
     this.setState({Names: data})
 }
 submit = (event)=>{
@@ -76,7 +69,6 @@ editable = (e,index) =>{
   })
 }
   render() {
-    console.log(this.state.Names);
     return(
       <div>
         <h1>Todo App</h1>

@@ -1,7 +1,4 @@
 import React , {Component} from 'react';
-// import ReactDOM from 'react-dom';
-import ContentEditable from 'react-contenteditable'
-import { Table, Button } from 'semantic-ui-react'
 
 class InputChecked extends Component {
     render() {
