@@ -13,9 +13,6 @@ class App extends Component {
         <div>
           <ul>
             <li>
-               <Link to="/">routing link</Link>
-            </li>
-            <li>
             <Link to="/home">Home</Link>
             </li>
             <li>
@@ -26,8 +23,7 @@ class App extends Component {
             </li>
           </ul>
 
-          <switch>
-            <route exact path = "/">routing</route>
+          <switch>  
             <Route exact path ="/home"><Home /></Route>
             <Route exact path ="/contact"><Contact /></Route>
             <Route exact path ="/message"><Message /></Route>
